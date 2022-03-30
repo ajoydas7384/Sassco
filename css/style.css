@@ -1,56 +1,25 @@
-
-	@font-face {
-	font-family: alata-regular;
-	src:url(../font/Alata-Regular.ttf);
-	font-weight: 400;
-	}
-
-	@font-face {
-		font-family: poppins-regular;
-		src:url(../font/Poppins-Regular.ttf);
-		font-weight: 400;
-	}
-
-	@font-face {
-		font-family: poppins-semibold;
-		src:url(../font/Poppins-SemiBold.ttf);
-	}
-
-	@font-face {
-		font-family: poppins-medium;
-		src:url(../font/Poppins-Medium.ttf);
-	}
-
-	@font-face {
-		font-family: poppins-mediumitalic;
-		src:url(../font/Poppins-MediumItalic.ttf);
-	}
-
-	@font-face {
-		font-family: poppins-light;
-		src:url(../font/Poppins-Light.ttf);
-		font-weight: 300;
-
-	}
-
 	body {
 		width: 100%;
 		margin: 0 auto;
 		overflow-x: hidden;
 		/*font-size: 17px;*/
-		font-family: "alata-regular"
+		font-family: "alata, sans-serif"
 	}
 
 	img {
 		max-width: 100%;
 	}
 
+	a {
+		text-decoration: none;
+	}
 
 	.header-area {
 		width: 100%;
 		background-image: url(../images/header-bg-image.png);
 		background-repeat: no-repeat;
-		padding-bottom: 6%;
+		padding-bottom: 50px;
+		padding-top: 50px;
 		margin: 0 auto;
 		background-size: cover;
 	}
@@ -69,14 +38,14 @@
 		display: inline-block;
 	}
 
-	.header-logo h2 {
-		font-family: alata-regular;
+	.header-logo a {
+		font-family: alata, sans-serif;
 		font-size: 35px;
 		color: white;
 		font-weight: 400;
 	}
 
-	.header-logo h2 span {
+	.header-logo span {
 		color: #24e09b;
 	}
 
@@ -106,7 +75,8 @@
 		padding-right: 28px;
 		color: #fff;
 		font-size: 17px;
-		font-family: "alata-regular";
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		text-decoration: none;
 	}
 
@@ -147,8 +117,15 @@
 	}
 
 	
+
+	.navbar .navbar-toggler {
+		color: white;
+		border: none;
+	}
+
+	
 	.active {
-		color: red!important;
+		color: #24e09b!important;
 	}
 
 	.header-btn {
@@ -158,6 +135,7 @@
 		border: none;
 		padding: 15px 40px;
 		border-radius: 4px;
+		font-family: poppins, sans-serif;
 		/*margin-left: 25px;*/
 	}
 
@@ -173,31 +151,30 @@
 	
 	.header-navbar {
 		display: inline-block;
-		margin-top: 10px;
+		/* margin-top: 10px; */
 	}
 
 
 
 	/*#########################*/
 
-	.banner {
-		padding-top: 7%;
+	.banner-area {
+		padding-top: 70px;
 	}
 
 	.banner-contant h4 {
 		color: white;
 		font-size: 65px;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-weight: 400;
 		margin-bottom: 30px;
 	}
 
 	.banner-contant p {
-		font-family: poppins-medium;
-		font-size: 15px;
+		font-family: alata, sans-serif;
+		font-size: 18px;
 		color: white;
 		font-weight: 400;
-		line-height: 35px;
 	}
 
 	.banner-contant button {
@@ -207,7 +184,8 @@
 		border: none;
 		border-radius: 3px;
 		font-size: 14px;
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		margin-top: 15px;
 	}
 
@@ -217,7 +195,8 @@
 	}
 
 	.banner-contant h6 {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		color: white;
 		font-size: 14px;
 		font-weight: 400;
@@ -242,13 +221,17 @@
 	.exclusive-text h2 {
 		padding-top: 45px;
 		font-size: 45px;
+		font-family: alata, sans-serif;
+		margin-bottom: 20px;
 	}
 
 	.exclusive-text p {
 		font-size: 18px;
 		line-height: 30px;
 		color: #7A7F83;
-		font-family: poppins-light;
+		font-family: poppins, sans-serif;
+		font-weight: 300;
+		margin-bottom: 40px;
 	}
 
 
@@ -258,81 +241,89 @@
 
 	/*features-area-start*/
 
-	.features {
+	.featured-area {
 		text-align: center;
 	}
 
 	.features-box {
 		margin: 4px;
 		border: 1px solid #EFF2FB;
+		padding: 40px;
+		margin-bottom: 20px;
 	}
 
 	.features-box h2 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 30px;
 	}
 
 	.features-box p {
 		font-size: 14px;
 		line-height: 30px;
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		color: #7A7F83;
 	}
 
-	.hovered .features-box:hover {
+	.features-box:hover p {
+		color: white;
+	}
+
+	.features-box:hover {
 		background-color: #3747D4;
 		color: white;
 		box-shadow: 0px 0px 20px 0px #6c757d;
 		border: none;
 	}
 
-	.features-box:hover p {
+	/* .features-box:hover p {
 		color: white;
-	}
+	} */
 	/*features-area-end*/
 
 	/*####################################################################*/
 
 	/*features-post-start*/
 
+
+	.super-clean-area {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
 	.post {
-		padding-top: 20px;
+		margin-left: -250px;
 	}
 
 	.text {
-		padding-right: 15%;
+		padding-top: 50px;
 	}
 
 	.text h2 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 40px;
 	}
 
-	.text h4 {
-		font-size: 13px;
-		font-family: poppins-regular;
+	.text p {
+		font-size: 16px;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		line-height: 30px;
 		color: #878C8F;
 	}
 
 	.text em {
-		font-size: 14px;
-		font-family: Myriad Pro Regular;
-	}
-
-	.text h6 {
-		font-family: poppins-regular;
-		font-size: 13px;
-		color: #878C8F;
-		line-height: 30px;
+		font-size: 15px;
+		font-family: alata, sans-serif;
 	}
 
 	.text button {
 		background-color: #24E09B;
 		color: white;
-		font-family: poppins-semibold;
-		font-size: 14px;
+		font-family: poppins, sans-serif;
+		font-size: 15px;
 		border: none;
+		padding: 15px;
 	}
 
 	.text button:hover {
@@ -358,16 +349,18 @@
 
 	.testimonial-post {
 		color: white;
-		padding-top: 6%;
-		padding-bottom: 6%;
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
 	.testimonial-area {
 		background-image: url(../images/footer-bg.png);
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	.testimonial-text h2 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 50px;
 		color: white;
 		padding-bottom: 10%;
@@ -378,6 +371,20 @@
 		border-radius: 5px;
 		margin: 10px;
 		text-align: center;
+		padding: 40px 0;
+	}
+
+	.testimonial-price-text img {
+		margin-bottom: 30px;
+	}
+
+	.testimonial-price-text p {
+		font-size: 20px;
+		font-family: alata, sans-serif;
+	}
+
+	.testimonial-price-text span {
+		font-size: 35px;
 	}
 
 	.testimonial-price-text:hover {
@@ -389,10 +396,12 @@
 	.testimonial-btn button {
 		background-color: #24E09B;
 		color: white;
-		font-family: poppins-semibold;
+		font-family: poppins, sans-serif;
 		font-size: 17px;
 		border: none;
-		padding: 20px 50px 20px 50px;
+		padding: 20px 50px;
+		border: 1px solid transparent;
+		border-radius: 5px;
 	}
 
 	.testimonial-btn button i {
@@ -402,6 +411,7 @@
 	.testimonial-btn button:hover {
 		background-color: rgb(55 71 212);
 		transition: 1s;
+		border: 1px solid white;
 	}
 
 	/*testimonial-area-end*/
@@ -414,23 +424,26 @@
 
 	.team-member-text {
 		text-align: center;
-		padding: 85px 0px 85px 0px;
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 
 	.team-member-text h2 {
 		font-size: 40px;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 	}
 
 	.team-member-text p {
 		font-size: 18px;
 		line-height: 30px;
-		font-family: poppins-light;
+		font-family: poppins, sans-serif;
+		font-weight: 300;
 		color: #7A7F83;
 	}
 
 	.team-member {
 		text-align: center;
+		margin-bottom: 70px;
 	}
 
 	.team-member img {
@@ -473,13 +486,14 @@
 
 	.box h2 {
 		font-size: 23px;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		padding-bottom: 10px;
 	}
 
 	.box p {
 		font-size: 13px;
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 
 	}
 	/*########################*/
@@ -488,13 +502,13 @@
 	.home-video-link {
 		text-align: center;
 		border-radius: 20px;
-		background-size: cover;
-		background-repeat: no-repeat;
+		background-repeat: round;
 		background-image: url("http://sasscokit.demothemesflat.com/wp-content/uploads/2020/09/bg-parallax1.jpg");
 		color: white;
 		padding-bottom: 60px;
 		/*opacity: 0.3;*/
 		/*background-color: blue;*/
+		position: relative;
 	}
 
 	.background-overlay {
@@ -509,7 +523,7 @@
 	}
 
 	.home-video-link h3 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 40px;
 		line-height: 55px;
 		padding-top: 80px;
@@ -537,18 +551,20 @@
 	}
 
 	.table-bgs {
-		margin-top: 15%;
+		margin-top: 200px;
 		text-align: center;
-		padding: 85px 0px 85px 0px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	.table-bgs h2 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 45px;
 	}
 
 	.table-bgs p {
-		font-family: poppins-light;
+		font-family: poppins, sans-serif;
+		font-weight: 300;
 		font-size: 18px;
 		color: #7A7F83;
 		line-height: 30px;
@@ -556,14 +572,16 @@
 
 	.box {
 		background-color: white;
+		margin-bottom: 20px;
 	}
 
 	.table-box {
 		overflow: hidden;
+		margin-bottom: 25px;
 	}
 
 	.text-btn button {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 20px;
 		color: #1D5DFF;
 		background-color: #DCF9EE;
@@ -582,17 +600,19 @@
 	}
 
 	.text-btn h4 {
-	  font-family: alata-regular;
+	  font-family: alata, sans-serif;
 	  font-size: 30px;
 	  margin-left: 23px;
 	  margin-top: 20px;
 	}
 
 	.table-text p {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 14px;
 		margin-bottom: 0;
 		text-align: center;
+		margin-bottom: 15px;
 	}
 
 	.table-btn {
@@ -603,7 +623,7 @@
 	  font-size: 14px;
 	  padding: 15px 45px;
 	  border: none;
-	  font-family: poppins-semibold;
+	  font-family: poppins, sans-serif;
 	  background-color: #DCF9EE;
 	  border-radius: 5px;
 	  color: #102039;
@@ -646,19 +666,22 @@
 		/*our-clients-start*/
 
 	.our-clients {
-		padding: 85px 0px 85px 0px;
 		text-align: center;
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 
 	.our-clients h2 {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 40px;
 	}
 
 	.our-clients p {
-		font-family: poppins-light;
+		font-family: poppins, sans-serif;
+		font-weight: 300;
 		line-height: 30px;
-		font-size: 20px;
+		font-size: 16px;
 		color: #7A7F83;
 	}
 
@@ -696,7 +719,8 @@
 	}
 
 	.statistick p {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 15px;
 		color: #95999C;
 		line-height: 38px;
@@ -718,6 +742,7 @@
 		border: none;
 		color: white;
 		margin-right: 1px;
+		width: 60px;
 	}
 
 	.flt-l {
@@ -725,6 +750,7 @@
 		background-color: #24E09B;
 		border: none;
 		color: white;
+		width: 60px;
 	}
 
 
@@ -739,22 +765,25 @@
 		overflow: hidden;
 		color: white;
 		background-size: cover;
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 
-	.promo-left {
+	/* .promo-left {
 		padding-right: 13%;
 		padding-left: 0;
 		margin-top: 85px;
 		padding-bottom: 11%;
-	}
+	} */
 
 	.promo-left h2 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 50px;
 	}
 
 	.promo-left p {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 14px;
 		line-height: 32px;
 		padding-top: 33px;
@@ -764,7 +793,7 @@
 		background-color: #24E09B;
 		color: white;
 		border: none;
-		font-family: poppins-semibold;
+		font-family: poppins, sans-serif;
 		font-size: 15px;
 		margin-top: 30px;
 	}
@@ -777,7 +806,7 @@
 
 	.promo-right h6 {
 		border: 1px solid #6A79E0;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 15px;
 		padding: 17px 33px;
 
@@ -788,7 +817,8 @@
 	}
 
 	.promo-right h6 p {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 14px;
 		line-height: 28px;
 		padding-top: 15px;
@@ -798,9 +828,9 @@
 		float: right;
 	}
 
-	.promo-right {
+	/* .promo-right {
 		margin-top: 95px;
-	}
+	} */
 
 			/*promosition-end*/
 	/*################################################*/
@@ -808,13 +838,13 @@
 			/*logo start*/
 
 
-	.home-logos img {
+	/* .home-logos img {
 		margin-right: 57px;
-	}
+	} */
 
 	.home-team-text p {
 		margin-top: 16%;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 22px;
 		margin-bottom: 5%;
 	  text-align: center;
@@ -834,18 +864,21 @@
 	/*lates-news-start*/
 
 	.lates-news {
-		padding: 85px 0px 85px 0px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 		text-align: center;
 	}
 
 	.lates-news h2 {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 40px;
 	}
 
 	.lates-news p {
-		font-family: poppins-light;
-		font-size: 20px;
+		font-family: poppins, sans-serif;
+		font-weight: 300;
+		font-size: 16px;
 		line-height: 30px;
 		color: #7A7F83;
 	}
@@ -863,7 +896,7 @@
 
 	.logo-text h4 {
 		font-size: 21px;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		line-height: 35px;
 	}
 
@@ -876,11 +909,21 @@
 	.logo-inner {
 		border: 1px solid #ebeffa;
 		border-radius: 5px;
+		margin-bottom: 20px;
+	}
+
+	.team-img img {
+		width: 100%;
 	}
 
 	.logo-inner:hover {
 		border: none;
 		box-shadow: 0px 0px 23px 14px #f7f8fe;
+	}
+
+	.team-logo {
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 
 			/*team-logo-end*/
@@ -898,16 +941,18 @@
 		/*overflow: hidden;*/
 	}
 
-	.blockpost-margin-left{
-		margin-left: 72px;
+
+	.third-carousel .item img {
+		width: 50%;
+		float: right;
 	}
 
-	.block-post a {
+	.block-post a:not(:first-child) {
 		display: block;
 		color: white;
-		line-height: 45px;
 		font-family: myriad pro;
-		font-size: 14px;
+		font-size: 16px;
+		margin-bottom: 20px;
 	}
 
 	.block-post a:hover {
@@ -921,41 +966,45 @@
 		color: #24e09b;
 	}
 
-	.bp-banner {
+	.block-post-banner {
 		border-bottom: 1px solid #556bdf;
-		padding: 75px 0;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin-bottom: 50px;
 	}
 
 	.block-post h2 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 35px;
+		margin-bottom: 22px;
 	}
 
-	.bp-text h2{
-		font-family: alata-regular;
+	/* .bp-text h2{
+		font-family: alata, sans-serif;
 		font-size: 45px;
-		line-height: 70px;
-	}
+	} */
 
-	.bp-button button {
+	.block-post-banner button {
 		background-color: #24e09b;
-		font-family: poppins-semibold;
+		font-family: poppins, sans-serif;
 		font-size: 17px;
 		border: none;
 		border-radius: 5px;
+		padding: 15px 30px;
+		float: right;
 	}
 
-	.bp-button button:hover {
+	.block-post-banner button:hover {
 		background-color: rgb(55 71 212);
 		transition: 1s;
 	}
 
-	.bp-button i {
+	/* .bp-button i {
 		padding-left: 20px;
-	}
+	} */
 
 	.bp-containt {
-		padding: 75px 0;
+		padding-bottom: 40px;
 	}
 
 	.bp-containt a i {
@@ -976,6 +1025,7 @@
 	.footer {
 		background-color: #102039;
 		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
 
@@ -985,7 +1035,8 @@
 
 	.footer a {
 		text-decoration: none;
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 14px;
 	}
 	.footer i {
@@ -994,7 +1045,7 @@
 		height: 40px;
 		width: 40px;
 		text-align: center;
-		line-height: 40px;
+		line-height: 37px;
 		margin-left: 12px;
 	}
 
@@ -1021,6 +1072,7 @@
 	.header-about-area {
 		background-image: url(../images/about-img/04_Saasco_About.jpg);
 		background-size: cover;
+		padding-top: 40px;
 	}
 
 	.about-us {
@@ -1034,7 +1086,7 @@
 
 	.heading h1 {
 		font-size: 60px;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		color: white;
 		padding-bottom: 10px;
 	}
@@ -1055,8 +1107,12 @@
 
 	.about-br ul li a {
 		color: white;
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
 		text-decoration: none;
+	}
+
+	.about-br ul li a:hover {
+		color: #24e09b;
 	}
 
 	.about-br ul li i {
@@ -1089,19 +1145,21 @@
 	}
 
 	.features-text h6 {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 18px;
 		color: #13e275;
 
 	}
 
 	.features-text h1 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 45px;
 	}
 
 	.features-text p {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		color: #878c8f;
 		font-size: 16px;
 		line-height: 30px;
@@ -1109,7 +1167,8 @@
 
 	.features-text em {
 		color: #102039;
-		font-family: poppins-mediumitalic;
+		font-family: poppins-italic, sans-serif;
+		font-weight: 400;
 		font-size: 18px;
 
 	}
@@ -1133,7 +1192,7 @@
 
 	.features-text button {
 		padding: 20px 50px;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		background-color: #24e09b;
 		color: white;
 		font-size: 17px;
@@ -1169,13 +1228,14 @@
 
 
 	/*.text-center p {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		color: #7A7F83;
 		font-size: 16px;
 	}
 
 	.text-center h2 {
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 	}
 */
 
@@ -1214,6 +1274,7 @@
 		text-align: center;
 		background-image: url("http://sasscokit.demothemesflat.com/wp-content/uploads/2020/09/bg-parallax1.jpg");
 		margin-top: -90px;
+		background-repeat: round;
 		padding-bottom: 60px;
 	}
 
@@ -1221,13 +1282,26 @@
 		margin-top: 30%;
 		color: white;
 		font-size: 40px;
-		font-family: 'alata-regular';
+		font-family: alata, sans-serif;
 		margin-bottom: 40px;
 	}
 
-	.bg-yellow {
-		background-color: #ff9739;
+	/* .video-link {
+		position: relative;
 	}
+
+	.video-link a {
+		height: 120px;
+		width: 120px;
+		position: absolute;
+		background-color: #ff9739;
+		color: white;
+		font-size: 30px;
+		top: 50%;
+		left: 50%;
+		border-radius: 50%;
+		line-height: 120px;
+	} */
 
 	
 	/*end-video-link*/
@@ -1235,21 +1309,21 @@
  /*######################################################*/
 
 	.about-team-member {
-		margin-bottom: 7%;
 		text-align: center;
 	}
 
 	.about-team-member h2 {
 		margin-top: 12%;
 		font-size: 40px;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 	}
 
 	.about-team-member p {
-		font-family: poppins-light;
-		font-size: 20px;
+		font-family: poppins, sans-serif;
+		font-weight: 300;
+		font-size: 15px;
 		color: #7A7F83;
-		line-height: 35px;
+		line-height: 30px;
 	}
 
 
@@ -1277,13 +1351,14 @@
 
 	.about-team-member h4 {
 		font-size: 25px;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		color: #102039;
 		margin-bottom: 20px;
 	}
 
 	.about-team-member h6 {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 14px;
 		color: #bbbbbb;
 	}
@@ -1328,14 +1403,15 @@
 
 	.coustomer h2 {
 		text-align: center;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 40px;
 	}
 
 	.coustomer-love-us p {
 		text-align: center;
 		font-size: 18px;
-		font-family: poppins-light;
+		font-family: poppins, sans-serif;
+		font-weight: 300;
 		color: gray;
 		line-height: 30px;
 	}
@@ -1349,12 +1425,13 @@
 	 }
 
 	.colon-logo {
-	  	margin-top: -21px;
 	 	padding-bottom: 30px;
+		 width: 50px;
 	}
 
 	.coustomer-bg p {
-		font-family: poppins-regular;
+		font-family: poppins, sans-serif;
+		font-weight: 400;
 		font-size: 14px;
 		color: #8f9496;
 		line-height: 30px;
@@ -1377,17 +1454,6 @@
 		background-color: #3745d3;
 	}
 
-	.logo-text2 h4 {
-		font-family: alata-regular;
-		font-size: 23px;
-	}
-
-	.logo-text2 h6 {
-		font-family: poppins-regular;
-		font-size: 13px;
-		color: gray;
-		margin-top: 20px;
-	}
 
 	/*.logo-text2 h6 span {
 		color: blue;
@@ -1402,7 +1468,7 @@
 		width: 80px;
 	}
 
-	.slider {
+	/* .slider {
 		padding-top: 35px;
 	}
 
@@ -1419,7 +1485,7 @@
 
 	.slider ul li i:hover {
 		color: blue;
-	}
+	} */
 
 
 	/*#########################################################*/
@@ -1430,7 +1496,7 @@
 
 	.about-team-text2 p {
 		padding-top: 15%;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 25px;
 		margin-bottom: 40px;
 	}
@@ -1475,6 +1541,10 @@
 				/*blog start*/
 
 
+	/* .blockpost-left {
+		padding-left: 120px;
+	} */
+
 
 	.blog-img-purple:hover {
 		border: 1px solid #b22dd4;
@@ -1517,7 +1587,7 @@
 		border-radius: 50%;
 		margin: 5px;
 		font-size: 12px;
-		font-family: poppins-semibold;
+		font-family: poppins, sans-serif;
 	}
 
 	.number-icon li:hover {
@@ -1537,17 +1607,16 @@
 
 /*#############################################################*/
 
-	.blog-logos {
+	/* .blog-logos {
 		margin-bottom: 10%;
-	}
+	} */
 
-	.blog-logos img {
+	/* .blog-logos img {
 		margin-right: 57px;
-	}
+	} */
 
 	.blog-team-text2 p {
-		padding-top: 15%;
-		font-family: alata-regular;
+		font-family: alata, sans-serif;
 		font-size: 25px;
 		margin-bottom: 40px;
 	}
@@ -1564,17 +1633,13 @@
 /*contact-start*/
 
 
-.elementer-row {
-	margin-bottom: 10%;
-}
-
 .contact {
 	text-align: center;
-	margin: 15px;
+	margin-bottom: 15px;
 	padding: 35px 25px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 20px -6px #7A7F83;
-	border: none;
+	border: 1px solid transparent;
 
 }
 
@@ -1589,52 +1654,93 @@
 
 .contact h4 {
 	font-size: 28px;
-	font-family: alata-regular;
+	font-family: alata, sans-serif;
 	color: #102039;
 	margin-bottom: 20px;
 }
 
 .contact h3 {
-	font-family: poppins-light;
+	font-family: poppins, sans-serif;
+	font-weight: 300;
 	color: #7A7F83;
 	font-size: 25px;
+}
+
+.contact a {
+	font-family: poppins, sans-serif;
+	font-weight: 300;
+	color: #7A7F83;
+	font-size: 20px;
+	word-wrap: break-word;
+}
+
+input[type=text] {
+	width: 100%;
+	margin-top: 30px;
+    margin-right: 25px;
+    border: 1px solid #B0AED0;
+    font-family: poppins, sans-serif;
+	font-weight: 400;
+    font-size: 14px;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+input[type=text]:focus {
+	outline: 2px solid #0d6efd;
+	border: none;
+}
+
+textarea {
+	width: 100%;
+	margin-top: 30px;
+	border-radius: 5px;
+	border: 1px solid #B0AED0;
+	padding: 15px;
+}
+
+textarea:focus {
+	outline: 2px solid #0d6efd;
+	border: none;
 }
 
 
 /*########################################*/
 
 .elementer {
-	margin-top: 8%;
-	margin-bottom: 8%;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
+
+.elementer-row {
+	margin-bottom: 50px;
+}
+
+
 .elementer-link h4 {
     font-size: 47px;
-    font-family: alata-regular;
-    padding-right: 100px;
+    font-family: alata, sans-serif;
+    /* padding-right: 100px; */
 
 }
 
-.elementer-map img {
+/* .elementer-map img {
 	height: 720px;
-}
-.elementer-link input {
-	/*overflow: visible;*/
+} */
+/* .elementer-link input {
     padding: 15px 85px 15px 25px;
     border-radius: 5px;
     margin-top: 30px;
     margin-right: 25px;
     border: 1px solid #B0AED0;
-    font-family: poppins-regular;
+    font-family: poppins, sans-serif;
+	font-weight: 400;
     font-size: 14px;
-}
+} */
 
-.e-mail {
+/* .e-mail {
 	margin-right: 0px;
-}
-
-.massege {
-	padding: 20px 404px 200px 25px!important
-}
+} */
 
 .elementer-link button {
 	color: white;
@@ -1643,7 +1749,12 @@
     padding: 20px 45px;
     border: none;
     margin-top: 40px;
-    font-family: 'alata-regular';
+    font-family: 'alata, sans-serif';
+}
+
+.elementer-link button:hover {
+	margin-left: 20px;
+	transition: .5s;
 }
 
 
@@ -1660,8 +1771,7 @@
 
 .home02 {
 	background-image: url("http://sasscokit.demothemesflat.com/wp-content/uploads/2020/09/banner-home-02.png");
-	padding-bottom: 20%;
-	margin-bottom: 25px;
+	background-repeat: round;
 }
 
 .home02-logo span {
@@ -1684,9 +1794,20 @@
 	background-color: #fd7e14;
 }
 
+.orange:hover {
+	color: #fd7e14;
+	background-color: white;
+}
+
 .log-in-bg-blue {
 	background-color: #3747D4;
 	margin-right: 20px;
+}
+
+.log-in-bg-blue:hover {
+	background: white;
+	transition: .5s;
+	color: #3747d4;
 }
 
 .home-dropdown ul li a {
@@ -1716,11 +1837,13 @@
 	text-decoration: underline;
 }
 .home02-banner-contant p {
-	font-size: 18px!important;
+	font-size: 18px;
+	font-family: poppins, sans-serif;
 }
 
 .home02-banner-contant button {
 	background: linear-gradient(279deg, rgba(251,216,21,1) 0%, rgba(254,151,8,1) 55%);
+	margin-right: 15px;
 }
 
 .home02-banner-contant button i {
@@ -1741,6 +1864,7 @@
 
 .home02-amazing-application {
 	padding-bottom: 70px;
+	padding-top: 70px;
 }
 
 .home02-features-application img {
@@ -1761,19 +1885,16 @@
 	box-shadow: 0px 0px 10px 2px #f2f4fb;
 }
 
-.application-open {
+.features-application:hover {
 	padding: 70px 35px 30px 35px;
     background-image: url(../images/home02/features-application.png);
-    background-size: contain;
+    /* background-size: contain; */
     background-size: cover;
     margin: 10px;
     text-align: center;
     border-radius: 5px;
     display: inline-block;
-}
-
-.application-open p {
-    color: white!important;
+	color: white;
 }
 
 .home02-amazing-application h2 {
@@ -1784,8 +1905,9 @@
 .home02-amazing-application p {
 	font-size: 15px;
 	line-height: 28px;
-	font-family: poppins-regular;
-	color: #7A7F83;
+	font-family: poppins, sans-serif;
+	font-weight: 400;
+	/* color: #7A7F83; */
 }
 
 .home02-amazing-application button {
@@ -1795,6 +1917,13 @@
 	background-color: #0e5be3;
 	border: none;
 	margin-top: 20px;
+	border: 1px solid transparent;
+}
+
+.home02-amazing-application button:hover {
+	background: white;
+	color: #0e5ce3;
+	border: 1px solid #0e5ce3;
 }
 
 .home02-amazing-application i {
@@ -1803,12 +1932,14 @@
 
 
 .home02-features-application {
-	padding-left: 20%;
+	padding-left: 0;
+	text-align: center;
 }
 
 
 .proper-guide {
-	padding-left: 18%;
+	padding-left: 60px;
+	padding-top: 135px;
 }
 
 .download-app {
@@ -1836,7 +1967,8 @@
 }
 
 .download-app-container {
-	padding-top: 6%;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
 .download-app button {
@@ -1845,6 +1977,7 @@
 	border-radius: 5px;
 	border: none;
 	color: white;
+	margin-right: 15px;
 }
 
 .download-app button:hover {
@@ -1857,7 +1990,7 @@
 }
 
 .sasscoapps h2 {
-	padding-top: 12%;
+	padding-top: 70px;
     padding-bottom: 20px;
     font-size: 40px;
 }
@@ -1866,7 +1999,7 @@
 	font-size: 22px;
 	line-height: 35px;
 	color: #95999c;
-	padding-bottom: 7%;
+	padding-bottom: 70px;
 }
 
 .sasscoapps span {
@@ -1927,9 +2060,10 @@
 .home02-price-box {
 	border: 2px solid #3575e8;
 	border-radius: 6px;
+	margin-bottom: 40px;
 }
 
-.home02-price-box-active {
+.home02-price-box:hover {
     border-radius: 6px;
     background-image: url(../images/home02/pricing-table-bg.png);
     color: black;
@@ -1986,7 +2120,7 @@
 }
 
 .home02-price-box button {
-	padding: 20px 35px;
+	padding: 15px;
     border: none;
     border-radius: 5px;
 	background: linear-gradient(104deg, rgba(251,216,21,1) 41%, rgba(254,151,8,1) 61%);    color: white;
@@ -2001,20 +2135,23 @@
 	background: linear-gradient(104deg, rgba(254,151,8,1) 32%, rgba(251,216,21,1) 61%);
 }
 
-.home02-happy-user-icon img {
-}
-
-.home02-user-img {
-	border: 1px solid blue;
-    border-radius: 50%;
+.user-icon {
+	border-radius: 50%;
     padding: 20px;
     height: 100px;
     width: 100px;
-    margin-left: 45px;
+	border: 1px solid red;
 }
 
-.home02-happy-user-box {
-	margin-top: 7%;
+.home02-user-img {
+	/* border: 1px solid blue; */
+    
+    /* margin-left: 45px; */
+}
+
+.home02-happy-user-icon {
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
 .home02-happy-user-box:hover {
@@ -2042,15 +2179,17 @@
  	font-size: 23px;
     font-weight: lighter;
     color: #102039;
-    font-family: poppins-light;
+    font-family: poppins, sans-serif;
+	font-weight: 300;
     line-height: 45px;
  }
 
 
 .happy-user-icon-right {
  	background-image: url(../images/home02/happy-user.png);
- 	height: 511px;
- 	margin-bottom: 15px;
+ 	/* height: 511px; */
+ 	/* margin-bottom: 15px; */
+	 background-repeat: round;
  }
 
 
@@ -2127,7 +2266,7 @@
     margin-left: -16px;
 }
 .happy-user-team2 {
-	padding-left: 190px;
+	padding-left: 235px;
     margin-top: -190px;
 }
 .happy-user-team3 {
@@ -2135,7 +2274,7 @@
     margin-top: 70px;
 }
 .happy-user-team4 {
-	padding-left: 40%;
+	padding-left: 42%;
 }
 .happy-user-team5 {
 	padding-left: 30px;
@@ -2227,23 +2366,24 @@
 	font-size: 15px;
 }
 
-.footer-aria h4 {
+.footer-aria a {
 	font-size: 19px;
     padding-bottom: 17px;
-    line-height: 35px;
+	color: white;
 }
 
-.footer-aria h4:hover {
+.footer-aria a:hover {
 	color: #f99505;
 }
 
 .footer-aria h6 {
 	font-size: 13px;
 	color: #b3c3e4;
+	padding-bottom: 20px;
 }
 
 .footer-aria .link {
-	padding: 20px 190px 20px 30px;
+	padding: 16px 190px 20px 30px;
     border-radius: 5px;
     border: none;
     background-color: blue;
@@ -2318,6 +2458,10 @@
 	display: inline-block;
 }
 
+.home03 .header-navbar ul li a {
+	color: black;
+}
+
 .home03 ul li a:hover {
 	text-decoration: none;
 }
@@ -2328,11 +2472,15 @@
 	padding: 0;
 }
 
+.home03 .navbar-collapse {
+	justify-content: center;
+}
+
 .home03-navber ul ul li {
 	text-align: left;
 }
 
-.home03 .logo {
+.home03 .header-logo {
 	background-color: #4a63fe;
 	color: white;
 }
@@ -2343,7 +2491,9 @@
 
 .home03 .link {
 	background-color: #ff9739;
-	padding-top: 17px;
+	padding-top: 14px;
+	font-family: poppins, sans-serif;
+	font-weight: 400;
 }
 
 .home03 .link a {
@@ -2358,6 +2508,12 @@
 	border-bottom: 1px solid #e7eaf5;
 }
 
+.home03-footer-area {
+	padding-top: 40px !important;
+	padding-bottom: 40px !important;
+	margin-top: 0 !important;
+}
+
 /*######################################################################*/
 
 .creative-aria {
@@ -2368,14 +2524,16 @@
 
 .creative-aria h2 {
 	font-size: 55px;
+	margin-bottom: 20px;
 }
 
 .creative-aria p {
 	font-size: 18px;
-    font-family: poppins-regular;
-    padding: 20px 20%;
+    font-family: poppins, sans-serif;
+	font-weight: 400;
     line-height: 30px;
     color: gray;
+	margin-bottom: 35px;
 }
 
 .creative-aria button {
@@ -2384,6 +2542,7 @@
     background-color: #4a63fe;
     color: white;
     border: none;
+	font-family: poppins, sans-serif;
 }
 
 .creative-aria button i {
@@ -2415,6 +2574,7 @@
     box-shadow: 0px 0px 6px -2px grey;
     margin-top: -10%;
     padding-top: 10%;
+	background-repeat: round;
 }
 
 
@@ -2501,14 +2661,15 @@
 
 .company-testimonial h2 {
 	font-size: 45px;
-	font-family: alata-regular;
+	font-family: alata, sans-serif;
 	text-align: center;
 	margin-bottom: 30px;
 }
 
 .company-testimonial coustomer-love-us p {
 	font-size: 18px;
-	font-family: poppins-regular;
+	font-family: poppins, sans-serif;
+	font-weight: 400;
 	color: #7A7F83;
 	line-height: 35px;
 	margin-top: 45px;
@@ -2522,7 +2683,8 @@
 .testimonial-logo-name {
     padding: 50px 50px 0px 50px;
     line-height: 35px;
-    font-family: 'poppins-regular';
+    font-family: 'poppins, sans-serif'
+	font-weight: 400;;
     color: #6c757d;
 }
 

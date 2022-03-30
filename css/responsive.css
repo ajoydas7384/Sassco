@@ -1,19 +1,139 @@
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-	.home02-amazing-application h2 {
-	    font-size: 18px;
+	.navbar {
+		float: right;
+	}
+
+	.third-carousel .item img {
+		width: 100%;
+		float: none;
+	}
+
+	.blockpost-left {
+		padding-left: 0;
+	}
+
+	.elementer-map 	{
+		margin-top: 40px;
+	}
+
+	.home02-happy-user-icon-img {
+		padding-left: 0;
+		margin-top: 40px;
+	}
+
+	.home03 {
+		padding-bottom: 40px;
+	}
+
+	.home03 .navbar .navbar-toggler {
+		color: black;
+	}
+
+	.creative-aria h2 {
+		font-size: 35px;
+	}
+
+	.banner-img {
+		margin-right: 0;
+	}
+
+	.testimonial-text h2 {
+		font-size: 35px;
+	}
+
+	.testimonial-btn button {
+		padding: 15px 20px;
+	}
+
+	.table-bgs {
+		margin-top: 50px;
+	}
+
+	.text-1 {
+		border-right: none;
+		padding-right: 0;
+		padding-left: 0;
+		padding-bottom: 30px;
+	}
+
+	.text-2 {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.promo-right {
+		margin-top: 0;
 	}
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.navbar {
+		float: right;
+	}
+
+	.home03 .navbar .navbar-toggler {
+		color: black;
+	}
+
+	.blockpost-left {
+		padding-left: 0;
+	}
+
+	.elementer-map 	{
+		margin-top: 40px;
+	}
+
+	.home02-happy-user-icon-img {
+		padding-left: 0;
+	}
+
+ }
 
 /*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.navbar {
+		float: right;
+	}
+
+	.home03 .navbar .navbar-toggler {
+		color: black;
+	}
+
+	.blockpost-left-0 {
+		padding-left: 0;
+	}
+}
 
 /*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.blockpost-left {
+		padding-left: 20px;
+	}
+}
 
 /*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	.blockpost-left {
+		padding-left: 40px;
+	}
+
+	.log-in-bg-blue {
+		margin-right: 0;
+	}
+
+	.header-navbar ul li a {
+		padding-right: 20px;
+	}
+
+}
+
+/*// Extra Extra large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.blockpost-left {
+		padding-left: 120px;
+	}
+}
+

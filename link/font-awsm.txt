@@ -1,2 +1,0 @@
-font-family: 'Alata', sans-serif;
-font-family: 'Poppins', sans-serif;
